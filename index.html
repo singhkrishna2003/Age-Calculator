@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/noun-age-6176450.png"
+    />
+
+    <title>Age Calculator</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="cl">
+        <form>
+          <div>
+            <p class="inputheaders dayh">Day</p>
+            <input class="day" type="number" placeholder="DD" />
+            <p class="error dayempty">This field is required</p>
+            <p class="error dayinvalid">Must be a valid day</p>
+          </div>
+          <div>
+            <p class="inputheaders monthh">Month</p>
+            <input class="month" type="number" placeholder="MM" />
+            <p class="error monthempty">This field is required</p>
+            <p class="error monthinvalid">Must be a valid month</p>
+          </div>
+          <div>
+            <p class="inputheaders yearh">Year</p>
+            <input class="year" type="number" placeholder="YYYY" />
+            <p class="error yearempty">This field is required</p>
+            <p class="error yearinvalid">Must be in the past</p>
+          </div>
+        </form>
+        <button>
+          <img
+            class="arrow"
+            src="./assets/images/icon-arrow.svg"
+            alt="image arrow"
+          />
+        </button>
+      </div>
+      <h1>
+        <span class="youryears anim">- -</span>
+        <span class="headeryear"> years</span>
+      </h1>
+      <h1>
+        <span class="yourmonths anim">- -</span>
+        <span class="headermonth"> months</span>
+      </h1>
+      <h1>
+        <span class="yourdays anim">- -</span>
+        <span class="headerday"> days</span>
+      </h1>
+    </main>
+    <footer>
+      <div class="attribution">
+        Design and Developed by 
+        <a href="https://www.linkedin.com/in/krishnasingh20/" target="_blank"
+          >Krishna Singh</a
+        >
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>

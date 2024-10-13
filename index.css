@@ -1,0 +1,165 @@
+@import url(./reset.css);
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Lightred: hsl(0, 100%, 67%);
+
+    --White: hsl(0, 0%, 100%);
+    --Offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
+}
+html, body{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Offwhite);
+    position: relative;
+}
+main{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px 20px 150px;
+    width: 35rem;
+}
+.cl{
+    position: relative;
+    margin: 0 0 2rem;
+}
+button{
+    position: absolute;
+    top: 75%;
+    left: 88%;
+    width: 4rem;
+    border-radius: 50%;
+    padding: 0.9rem;
+    background-color: var(--Purple);
+    border: none;
+}
+form{
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    border-bottom: 2px solid var(--Lightgrey);
+    padding: 0 0 2rem;
+    input{
+        width: 7rem;
+        padding: 0.4rem 1rem;
+        border-radius: 7px;
+        border: 1px solid var(--Lightgrey);
+        font-size: 1.5rem;
+        font-weight: 700;
+        outline: none;
+    }
+}
+.inputheaders{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin: 0 0 0.3rem;
+    font-weight: 650;
+    letter-spacing: 0.1rem;
+}
+.error{
+    font-size: 0.62rem;
+    margin: 0.4rem 0 0;
+    font-style: italic;
+    color: var(--Lightred);
+    font-weight: 500;
+    display: none;
+}
+h1{
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 4.5rem;
+
+    .anim{
+        color: var(--Purple);
+        font-size: 4.5rem;
+    }
+}
+.finished{
+    transition: all 0.5s ease-in-out;
+}
+button:hover{
+    background-color: var(--Offblack);
+    cursor: pointer;
+}
+input:hover{
+    cursor: pointer;
+    border: 2px solid var(--Purple);
+}
+input:focus{
+    border: 2px solid var(--Purple);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.anim {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+}
+
+.fade-out {
+    opacity: 0; /* Hide element */
+}
+
+.fade-in {
+    opacity: 1; /* Show element */
+}
+
+footer{
+    position: absolute;
+    top: 97%;
+}
+@media screen  and (max-width: 575px){
+    html, body{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    main{
+        padding: 3.5rem 2rem;
+        border-radius: 30px 30px 120px;
+        width: 100%;
+    }
+    .cl{
+        position: relative;
+        margin: 0 0 4.5rem;
+    }
+    button{
+        top: 75%;
+        left: 41%;
+        width: 5rem;
+        border-radius: 50%;
+        padding: 1.5rem;
+        background-color: var(--Purple);
+        border: none;
+    }
+    form{
+        width: 100%;
+        padding: 0 0 4rem;
+        justify-content: center;
+        input{
+            width: 100%;
+            padding: 0.8rem 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .anim{
+        font-size: 3rem;
+    }
+}
